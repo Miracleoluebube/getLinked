@@ -1,0 +1,139 @@
+@import "../../variables";
+
+.footer {
+  width: 100%;
+  position: relative;
+  padding: 83px 0 53px 0;
+  background-color: $dark-black;
+
+  @media screen and (max-width: 768px) {
+    padding: 83px 1rem 53px 1rem;
+  }
+
+  .container {
+    align-items: flex-start;
+    gap: 190px;
+
+    @media screen and (max-width: 1024px) {
+      gap: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      gap: 32px;
+      flex-direction: column;
+    }
+  }
+
+  .left {
+    max-width: 412px;
+    width: 100%;
+
+    img {
+      width: 143px;
+      height: 37px;
+      object-fit: contain;
+    }
+
+    p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    ul {
+      margin-top: 82px;
+      list-style: none;
+      display: flex;
+      gap: 15px;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 39px;
+      }
+
+      li {
+        font-size: 12px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .right {
+    width: 100%;
+    display: flex;
+    gap: 150px;
+    align-items: flex-start;
+
+    @media screen and (max-width: 1024px) {
+      gap: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      gap: 61px;
+      flex-direction: column;
+    }
+
+    .box {
+      width: max-content;
+    }
+
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    li {
+      font-size: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      cursor: pointer;
+
+      img {
+        margin-top: 5px;
+      }
+    }
+
+    .social {
+      margin-top: 12px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+
+      p {
+        font-size: 12px;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+
+      li img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .tagline {
+    text-align: center;
+    margin-top: 53px;
+
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15px;
+    }
+  }
+}

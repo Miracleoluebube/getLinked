@@ -1,0 +1,157 @@
+@import "../../variables";
+
+.contactUsPage {
+  width: 100%;
+  position: relative;
+  margin-top: 128px;
+  padding: 115px 0;
+  overflow: hidden;
+
+  @media screen and (max-width: 780px) {
+    margin-top: 70px;
+    padding: 75px 1rem;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 225px;
+
+    @media screen and (max-width: 1024px) {
+      gap: 50px;
+    }
+
+    @media screen and (max-width: 780px) {
+      flex-direction: column;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0%;
+      left: -13%;
+      background-color: #903aff;
+      border-radius: 100%;
+      box-shadow: 0 0 2px #903aff;
+      width: 300px;
+      height: 250px;
+      filter: blur(100px);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0%;
+      right: -25%;
+      background-color: #903aff;
+      border-radius: 100%;
+      box-shadow: 0 0 2px #903aff;
+      width: 300px;
+      height: 250px;
+      filter: blur(90px);
+      z-index: -1;
+      pointer-events: none;
+
+      @media screen and (max-width: 768px) {
+        right: -35%;
+      }
+    }
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+    max-width: 272px;
+    width: 100%;
+
+    @media screen and (max-width: 780px) {
+      display: none;
+    }
+
+    h2 {
+      margin-bottom: 17px;
+    }
+
+    p {
+      line-height: 20px;
+    }
+  }
+
+  .social {
+    margin-top: 18px;
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      margin-top: 14px;
+    }
+
+    li {
+    }
+  }
+
+  .right {
+    max-width: 617px;
+    width: 100%;
+    padding: 75px 90px;
+    background-color: $light-black;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 12px;
+
+    @media screen and (max-width: 1024px) {
+      padding: 40px 40px;
+    }
+
+    p.p-clr {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 25px;
+    }
+
+    .mob-line {
+      display: none;
+
+      @media screen and (max-width: 1024px) {
+        display: block;
+        margin-top: 24px;
+      }
+    }
+  }
+
+  .contactForm {
+    margin-top: 35px;
+    width: 100%;
+
+    .formInput {
+      margin-bottom: 42px;
+
+      input::placeholder {
+        color: $white;
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+
+    .textarea {
+      textarea {
+        height: 119px;
+
+        @media screen and (max-width: 1024px) {
+          height: 140px;
+        }
+      }
+    }
+
+    button.p-btn {
+      margin: auto;
+      display: block;
+    }
+  }
+}

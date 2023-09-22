@@ -1,0 +1,172 @@
+@import "./_variables";
+
+@font-face {
+  font-family: "clashDisplay";
+  src: local("clashDisplay"),
+    url("./static/fonts/ClashDisplay-Regular.otf") format("opentype"),
+    url("./static/fonts/ClashDisplay-Medium.otf") format("opentype"),
+    url("./static/fonts/ClashDisplay-Semibold.otf") format("opentype"),
+    url("./static/fonts/ClashDisplay-Bold.otf") format("opentype"),
+    url("./static/fonts/ClashDisplay-Extralight.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  color: $white;
+  background-color: $dark-black;
+
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.container {
+  max-width: 1256px;
+  width: 100%;
+  margin: auto;
+
+  @media screen and (max-width: 1280px) {
+    max-width: 1024px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 768px;
+  }
+
+  @media screen and (max-width: 780px) {
+    max-width: 500px;
+  }
+}
+
+h1 {
+  font-family: clashDisplay;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 82px;
+  color: $white;
+
+  @media screen and (max-width: 1280px) {
+    font-size: 69px;
+    line-height: 75px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+h2 {
+  font-family: clashDisplay;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  color: $white;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  color: $white;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  color: $white;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+p,
+a,
+li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: $white;
+
+  @media screen and (max-width: 768px) {
+    line-height: 25px;
+  }
+}
+
+.p-btn {
+  padding: 16px 52px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $white;
+
+  background: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+
+  @media screen and (max-width: 768px) {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-clr {
+  color: $p-clr;
+}
+
+.s-clr {
+  color: $s-clr;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.stop {
+  overflow: hidden;
+}

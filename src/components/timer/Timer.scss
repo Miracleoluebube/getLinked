@@ -1,0 +1,18 @@
+.timer {
+  justify-content: flex-start;
+  gap: 25px;
+
+  h1 {
+    font-family: "Unica One", cursive;
+    font-size: 64px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 48px;
+    }
+  }
+
+  span {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
